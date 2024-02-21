@@ -12,6 +12,7 @@ import Register from './screens/Register.jsx';
 import ProductDetails from './screens/ProductDetails.jsx';
 import CartScreen from './screens/Cart.jsx';
 import store from './state/store.js'
+import ProfileScreen from './screens/ProfileScreen.jsx'
 
 
 const router = createBrowserRouter([
@@ -37,7 +38,14 @@ const router = createBrowserRouter([
   path:'/cart',
   element:<CartScreen/>
 
-  }
+  },
+
+
+  {
+    path:'/profile',
+    element:<ProfileScreen/>
+  
+    },
 ]);
 
 
